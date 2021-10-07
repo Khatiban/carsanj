@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fifth_bg"
+    tools:context="com.fury.carsanj.LoginActivity">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:padding="20dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/ET_user"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_password_bg1"
+                android:gravity="center_vertical|right"
+                android:inputType="text"
+                android:padding="18.0dip"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text2"
+                android:hint="نام کاربری"
+                android:textDirection="ltr"
+                android:textSize="16.0sp"/>
+
+            <EditText
+                android:id="@+id/ET_pass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_password_bg1"
+                android:gravity="center_vertical|right"
+                android:inputType="text"
+                android:padding="18.0dip"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text2"
+                android:hint="رمز عبور"
+                android:textDirection="ltr"
+                android:layout_marginTop="15dp"
+                android:textSize="16.0sp"/>
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                android:background="@drawable/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                android:padding="18.0dip"
+                android:layout_marginTop="16dp"
+                android:text="ورود"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/text"
+                android:padding="15dp"
+                android:id="@+id/fore"
+                android:text="فراموشی رمز عبور"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

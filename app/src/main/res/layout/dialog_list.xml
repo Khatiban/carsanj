@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="280.0dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="280.0dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_relax2"
+        android:id="@+id/dialogset"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dialog_universal_info_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="10.0dip"
+                    android:paddingTop="10dp"
+                    android:gravity="center"
+                    android:text="موضوع"
+                    android:textColor="@color/text"
+                    android:textSize="24.0sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup1">
+                <LinearLayout
+                    android:id="@+id/numberpicker_container5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                    android:id="@+id/numberpicker_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:checked="true"
+                            android:background="?selectableItemBackground"
+                            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                            android:id="@+id/radioButton" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:background="?selectableItemBackground"
+                            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                            android:id="@+id/radioButton2" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:background="?selectableItemBackground"
+                            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                            android:id="@+id/radioButton3" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:background="?selectableItemBackground"
+                            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                            android:id="@+id/radioButton4" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:background="?selectableItemBackground"
+                            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                            android:id="@+id/radioButton5" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:background="?selectableItemBackground"
+                            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                            android:id="@+id/radioButton6" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:background="?selectableItemBackground"
+                            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                            android:id="@+id/radioButton7" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:background="?selectableItemBackground"
+                            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                            android:id="@+id/radioButton8" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:background="?selectableItemBackground"
+                            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                            android:id="@+id/radioButton9" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New RadioButton"
+                            android:background="?selectableItemBackground"
+                            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                            android:id="@+id/radioButton10" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/numberpicker_container3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New RadioButton"
+                        android:background="?selectableItemBackground"
+                        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                        android:id="@+id/radioButton11" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New RadioButton"
+                        android:background="?selectableItemBackground"
+                        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                        android:id="@+id/radioButton12" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New RadioButton"
+                        android:background="?selectableItemBackground"
+                        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                        android:id="@+id/radioButton13" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New RadioButton"
+                        android:background="?selectableItemBackground"
+                        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                        android:id="@+id/radioButton14" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New RadioButton"
+                        android:background="?selectableItemBackground"
+                        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                        android:id="@+id/radioButton15" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New RadioButton"
+                        android:background="?selectableItemBackground"
+                        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                        android:id="@+id/radioButton16" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New RadioButton"
+                        android:background="?selectableItemBackground"
+                        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                        android:id="@+id/radioButton17" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New RadioButton"
+                        android:background="?selectableItemBackground"
+                        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                        android:id="@+id/radioButton18" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New RadioButton"
+                        android:background="?selectableItemBackground"
+                        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                        android:id="@+id/radioButton19" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New RadioButton"
+                        android:background="?selectableItemBackground"
+                        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                        android:id="@+id/radioButton20" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/numberpicker_container2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="تایید"
+            android:gravity="center"
+            android:textColor="@color/text"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/send"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/bg_relax4"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

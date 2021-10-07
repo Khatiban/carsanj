@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#24879A"
+        android:id="@+id/rl1"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="15dp"
+            android:id="@+id/back"
+            android:src="@drawable/nav_arrow_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text"
+            android:id="@+id/name"
+            android:text="name"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/e1210eacbd46ee7fc6875d8699e9033b"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/rl1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl1">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0dp"
+            android:divider="@color/text"
+            android:id="@+id/lv" />
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true">
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_24dp"
+            android:layout_toLeftOf="@+id/send"
+            fab:fab_colorNormal="@color/colorPrimary"
+            fab:fab_colorPressed="@color/colorPrimaryDark"
+            fab:fab_colorRipple="@color/colorAccent"
+            android:layout_marginRight="2dp"
+            fab:fab_shadow="false"
+            fab:fab_type="mini" />
+
+        <com.melnykov.fab.FloatingActionButton
+            android:layout_alignParentRight="true"
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_24dp"
+            fab:fab_colorNormal="@color/colorPrimary"
+            fab:fab_colorPressed="@color/colorPrimaryDark"
+            fab:fab_colorRipple="@color/colorAccent"
+            fab:fab_shadow="false"
+            fab:fab_type="mini" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_toLeftOf="@+id/file"
+            android:layout_alignParentLeft="true"
+            android:hint="پیام"
+            android:textColorHint="@color/text2"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/text"
+            android:textSize="15sp"
+            android:textDirection="rtl"
+            android:id="@+id/textms"
+            android:background="@drawable/et_password_bg2"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

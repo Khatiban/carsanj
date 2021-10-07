@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="280.0dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/di"
+        android:id="@+id/dialogset"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dialog_universal_info_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="10.0dip"
+                    android:paddingTop="10dp"
+                    android:gravity="center"
+                    android:text="تغییر رمز"
+                    android:textColor="@color/gray"
+                    android:textSize="24.0sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/numberpicker_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:layout_gravity="left"
+                        android:id="@+id/text_mo"
+                        android:gravity="center"
+                        android:background="@drawable/di"
+                        android:hint="رمز قدیمی"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/numberpicker_container3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:layout_gravity="left"
+                        android:id="@+id/text_mo2"
+                        android:gravity="center"
+                        android:background="@drawable/di"
+                        android:hint="رمز جدید"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/numberpicker_container2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ثبت"
+            android:gravity="center"
+            android:textColor="@color/text"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/send"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/bg_relax4"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="لغو"
+            android:textColor="@color/text"
+            android:gravity="center"
+            android:id="@+id/cancel"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:background="@drawable/bg_relax3"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingBottom="8dp"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+</RelativeLayout>

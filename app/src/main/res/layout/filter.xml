@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#494949"
+        android:id="@+id/rl1"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="15dp"
+            android:id="@+id/back"
+            android:src="@drawable/nav_arrow_back"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:id="@+id/filter"
+            android:src="@drawable/filter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text"
+            android:text="ساعات کار"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:gravity="right"
+        android:text="نام کاربر : احسان خطیبان"
+        android:textColor="@color/text"
+        android:id="@+id/texuser"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texuser"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:gravity="right"
+        android:text="شرکت : برنا"
+        android:textColor="@color/text"
+        android:id="@+id/texFactory"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texFactory"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:gravity="right"
+        android:text="موضوع : برنامه نویسی"
+        android:textColor="@color/text"
+        android:id="@+id/texSub"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texSub"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:gravity="right"
+        android:text="ساعات کاری (ساعت): 23"
+        android:textColor="@color/text"
+        android:id="@+id/texTime"/>
+
+</RelativeLayout>

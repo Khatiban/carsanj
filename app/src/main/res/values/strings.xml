@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">کارسنج</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">نام کاربری</string>
+    <string name="prompt_password">پسورد</string>
+    <string name="action_sign_in_short">ورود</string>
+    <string name="error_invalid_email">نام کاربری خالی میباشد!</string>
+    <string name="error_invalid_password">رمز عبور کوتاه میباشد!</string>
+    <string name="error_field_required">خطا در ورود</string>
+</resources>

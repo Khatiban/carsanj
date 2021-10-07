@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#494949"
+        android:id="@+id/rl1"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="15dp"
+            android:id="@+id/back"
+            android:src="@drawable/nav_arrow_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text"
+            android:text="تنظیمات"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:padding="10dp"
+                android:text="ساعت کاری جدید"
+                android:id="@+id/tx1"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text="انتخاب کاربر"
+                android:background="@drawable/et_password_bg1"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/setuser"
+                android:layout_below="@+id/tx1"/>
+
+            <EditText
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text"
+                android:padding="10dp"
+                android:hint="از ساعت"
+                android:background="@drawable/et_password_bg1"
+                android:gravity="center"
+                android:id="@+id/etaztime"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/setuser"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:hint="تا ساعت"
+                android:background="@drawable/et_password_bg1"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/etaztime"
+                android:id="@+id/ettatime"
+                android:layout_below="@+id/setuser"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text="ثبت"
+                android:background="@drawable/et_password_bg1"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/ettimesend"
+                android:layout_below="@+id/ettatime"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/text"
+            android:orientation="horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:padding="10dp"
+                android:text="گزارش کار"
+                android:id="@+id/tx2"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:padding="10dp"
+                android:text="نام شرکت"
+                android:id="@+id/tx3"
+                android:gravity="right"
+                android:layout_below="@+id/tx2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:padding="10dp"
+                android:text="انتخاب"
+                android:background="@drawable/et_password_bg1"
+                android:gravity="center"
+                android:id="@+id/btnDelete"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/Delete"
+                android:layout_below="@+id/namework"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text="حذف"
+                android:background="@drawable/et_password_bg1"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/Delete"
+                android:layout_below="@+id/namework"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text"
+                android:padding="10dp"
+                android:hint="نام شرکت"
+                android:background="@drawable/et_password_bg1"
+                android:gravity="center"
+                android:id="@+id/namework"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/worksend"
+                android:layout_below="@+id/tx3"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text="ثبت"
+                android:background="@drawable/et_password_bg1"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/worksend"
+                android:layout_below="@+id/tx3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:padding="10dp"
+                android:text="نوع کار"
+                android:id="@+id/tx4"
+                android:gravity="right"
+                android:layout_below="@+id/Delete"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:padding="10dp"
+                android:text="انتخاب"
+                android:background="@drawable/et_password_bg1"
+                android:gravity="center"
+                android:id="@+id/btnDelete2"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/Delete2"
+                android:layout_below="@+id/namesub"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text="حذف"
+                android:background="@drawable/et_password_bg1"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/Delete2"
+                android:layout_below="@+id/namesub"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text"
+                android:padding="10dp"
+                android:hint="نوع کار"
+                android:background="@drawable/et_password_bg1"
+                android:gravity="center"
+                android:id="@+id/namesub"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/worksend"
+                android:layout_below="@+id/tx4"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text="ثبت"
+                android:background="@drawable/et_password_bg1"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/subsend"
+                android:layout_below="@+id/tx4"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/text"
+            android:orientation="horizontal"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/text"
+            android:orientation="horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:padding="10dp"
+            android:text="تغییر ایمیل"
+            android:id="@+id/tx8"
+            android:gravity="center" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/text"
+            android:orientation="horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:padding="10dp"
+            android:text="تغییر رمز ورود"
+            android:id="@+id/tx7"
+            android:gravity="center" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/text"
+            android:orientation="horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:padding="10dp"
+            android:text="خروج از حساب کاربری"
+            android:id="@+id/tx6"
+            android:gravity="center" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/text"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

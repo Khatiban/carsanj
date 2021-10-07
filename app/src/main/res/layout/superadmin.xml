@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#494949"
+        android:id="@+id/rl1"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="15dp"
+            android:id="@+id/setting"
+            android:src="@drawable/settings"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:id="@+id/filter"
+            android:src="@drawable/list_view"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backname"
+        android:text="شما مدیر هستید"
+        android:gravity="center"
+        android:id="@+id/textName"
+        android:textColor="#494949"
+        android:layout_below="@+id/rl1"
+        android:layout_alignParentRight="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rl1"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/text"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:textColor="@color/text"
+                android:textSize="22sp"
+                android:id="@+id/mhm"
+                android:text="موقعیت کاربران"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/text"
+                android:layout_below="@+id/mhm"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:textColor="@color/text"
+                android:textSize="22sp"
+                android:layout_below="@+id/mhm"
+                android:id="@+id/mdm"
+                android:text="تماس های کاربران"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/text"
+                android:layout_below="@+id/mdm"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:textColor="@color/text"
+                android:textSize="22sp"
+                android:layout_below="@+id/mdm"
+                android:id="@+id/mes"
+                android:text="پیام ها"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/text"
+                android:layout_below="@+id/mes"
+                android:orientation="horizontal"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
